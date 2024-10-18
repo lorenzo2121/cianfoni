@@ -140,44 +140,54 @@ const handleContact = async (requestIndex) => {
 
   return (
     <div>
-      <nav className="navbar-private">
-        <h1 className='profile-private-title'>Profile</h1>
-        <div className="requests">
-          Richieste
-          {requestCount >= 0 && <span className="badge">{requestCount}</span>}
-        </div>
-      </nav>
-      <div className="content">
-        {requests.length > 0 ? (
-          <div className="requests-container">
-            {requests.map((request, index) => (
-              <div key={index} className="request-card">
-                {request.imageUrl && (
-                  <img src={request.imageUrl} alt="Richiesta" className="request-image" />
-                )}
-                <h3>Servizio: {request['prestazione/servizio']}</h3>
-                <p>Zona: {request.zona}</p>
-                <p>
-                  Telefono: {request.status === 'locked' ? <img src={lockedphone} alt="Locked" className="locked-image" /> : request.telefono}
-                </p>
-                <p>Descrizione: {request.descrizione}</p>
-                <div className="buttons">
-                  {request.status === 'unlocked' ? (
-                    <p className='contattato'>Contattato</p>
-                  ) : (
-                    <button onClick={() => handleContact(index)}>Contatta</button>
-                  )}
-                  <button onClick={() => handleDelete(index)}>Elimina</button>
-                </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <p>Nessuna richiesta disponibile.</p>
-        )}
+    <nav className="navbar-private">
+      <h1 className='profile-private-title'>Profile</h1>
+      <div className="requests">
+        Richieste
+        {requestCount >= 0 && <span className="badge">{requestCount}</span>}
       </div>
-      <Footer />
+    </nav>
+    <div className="content">
+      {requests.length > 0 ? (
+        <div className="requests-container">
+          {requests.map((request, index) => (
+            <div key={index} className="request-card">
+              {/* Render images from the imageUrls array */}
+              {request.imageUrls && request.imageUrls.length > 0 && (
+                <div className="image-gallery">
+                  {request.imageUrls.map((imageUrl, imgIndex) => (
+                    <img
+                      key={imgIndex}
+                      src={imageUrl}
+                      alt={`Richiesta ${imgIndex + 1}`}
+                      className="request-image"
+                    />
+                  ))}
+                </div>
+              )}
+              <h3>Servizio: {request['prestazione/servizio']}</h3>
+              <p>Zona: {request.zona}</p>
+              <p>
+                Telefono: {request.status === 'locked' ? <img src={lockedphone} alt="Locked" className="locked-image" /> : request.telefono}
+              </p>
+              <p>Descrizione: {request.descrizione}</p>
+              <div className="buttons">
+                {request.status === 'unlocked' ? (
+                  <p className='contattato'>Contattato</p>
+                ) : (
+                  <button onClick={() => handleContact(index)}>Contatta</button>
+                )}
+                <button onClick={() => handleDelete(index)}>Elimina</button>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p>Nessuna richiesta disponibile.</p>
+      )}
     </div>
+    <Footer />
+  </div>
   );
 };
 
