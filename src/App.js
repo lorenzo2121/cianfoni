@@ -27,7 +27,9 @@ import Animation from './Components/Animation'
 import videoBg from './Assets/search.mp4'
 import Footer from './Components/Footer'
 
-function HomePage() {
+function HomePage(){
+
+  console.log(videoBg);
 
   const scrollToSearchSection = () => {
     const searchSection = document.getElementById('search-section');
