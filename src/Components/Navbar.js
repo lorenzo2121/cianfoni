@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import '../Styles/navbar.css';
-import logo from '../Assets/logo-removebg-preview.png';
+import logo from '../Assets/logo-no-bg.png';
 import LoginForm from './Loginform';
 import { useAuth } from './Authcontext';
 import { useNavigate } from 'react-router-dom';

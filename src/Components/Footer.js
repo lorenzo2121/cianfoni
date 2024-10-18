@@ -1,5 +1,5 @@
 import '../Styles/footer.css';
-import img2 from '../Assets/footer-logo-1.webp';
+import img2 from '../Assets/logo-no-bg.png';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 function Footer() {
@@ -8,7 +8,7 @@ function Footer() {
       <div className='footer-container'>
         <div className='footer-column'>
           <img className='logo-footer-column' src={img2} alt="Logo" />
-          <p>Con Startup Geeks affianchiamo la crescita di chi vuole innovare 
+          <p>Con The Work affianchiamo la crescita di chi vuole innovare 
             trasmettendogli le migliori conoscenze,
             competenze e network per farlo al meglio.</p>
           <div className='icons-social'>
@@ -52,7 +52,7 @@ function Footer() {
       </div>
 
       <div className='div2'>
-        <p className='text-div2'>© Copyright 2020-2024 | Startup Geeks | All Rights Reserved | Startup Geeks S.r.l. SB - P.IVA: 02613410204 | 
+        <p className='text-div2'>© Copyright 2020-2024 | The Work | All Rights Reserved | The Work S.r.l. SB - P.IVA: 02613410204 | 
            N° REA: MN-266523 | Capitale versato: 13.747,21 € | Relazione d'impatto benefit 2023</p>
       </div>
     </>
