@@ -1,0 +1,12 @@
+/* Stili per la navbar */
+.navbarsignup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logosignup {
+    height: 60px;
+}

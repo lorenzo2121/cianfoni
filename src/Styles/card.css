@@ -1,0 +1,58 @@
+/* src/Components/Card.css */
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 10px;
+  width: 100%; /* Imposta la larghezza al 100% per i piccoli schermi */
+  max-width: 300px; /* Limita la larghezza massima per i grandi schermi */
+  flex: 1 1 calc(33.333% - 20px); /* Le card occupano 1/3 dello spazio disponibile */
+  box-sizing: border-box; /* Considera il padding all'interno delle dimensioni */
+}
+
+.card-image {
+  width: 100%;
+  height: auto; /* Mantiene le proporzioni */
+  max-height: 200px; /* Limita l'altezza massima */
+  object-fit: cover; /* Adatta l'immagine senza distorcerla */
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Stili responsivi per diversi schermi */
+@media (max-width: 1200px) {
+  .card {
+      flex: 1 1 calc(50% - 20px); /* 2 card per fila */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+      flex: 1 1 calc(100% - 20px); /* 1 card per fila su piccoli schermi */
+  }
+}
+
+/* Layout del container per la disposizione delle card */
+.container1 {
+  display: flex;
+  flex-wrap: wrap; /* Le card si adattano su più righe */
+  justify-content: center; /* Centra le card orizzontalmente */
+  gap: 20px; /* Spazio tra le card */
+  margin: 0 auto; /* Centra il container */
+  padding: 20px; /* Spazio attorno alle card */
+  max-width: 1200px; /* Limita la larghezza massima del container */
+}

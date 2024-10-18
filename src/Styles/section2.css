@@ -1,0 +1,35 @@
+
+  
+  .container-left-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 900;
+    height: fit-content;
+  }
+  
+  .left-item {
+    
+    background-size: contain; /* Imposta la dimensione dell'immagine per coprire l'intero contenitore */
+    background-position: center; /* Centra l'immagine */
+    background-repeat: no-repeat;
+    height: 270px;
+    width: 470px;
+  }
+  
+  .right-item {
+    height: 400px;
+    width: 600px;
+  }
+
+  .store-item-discount{
+    max-width: 100%;
+    border: 1px solid #0fcf77;
+    background-color: rgba(15, 207, 119, .1);
+    color: #0fcf77;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+  }
+  

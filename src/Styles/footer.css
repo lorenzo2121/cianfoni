@@ -1,0 +1,96 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 colonne di larghezza uguale */
+  background-color: #09ad5b; /* Colore di sfondo del footer */
+  padding: 20px; /* Spaziatura interna del footer */
+
+}
+
+.footer-column {
+  background-color: #09ad5b; /* Colore di sfondo per le colonne */
+  padding: 10px; /* Spaziatura interna delle colonne */
+  text-align: center; /* Testo centrato */
+
+}
+
+.logo-footer-column {
+  margin-bottom: 25px;
+}
+
+.div1 {
+  background-color: #098a49;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.div1-item {
+  margin-left: 10px;
+}
+
+.div2 {
+  background-color: #044d2a;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.div3 {
+  background-color: #f8f8f8;
+}
+
+/* Stili per le icone social */
+.icons-social {
+  display: flex;
+  justify-content: center; /* Centra le icone orizzontalmente */
+  margin-top: 10px;
+}
+
+.icons-social a {
+  margin: 0 5px; /* Spaziatura tra le icone */
+}
+
+.icons-social a div {
+  background-color: #90ee90; /* Verde chiaro per il contenitore delle icone */
+  padding: 10px; /* Spaziatura interna per rendere i div più grandi */
+  border-radius: 50%; /* Trasforma il div in un cerchio */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Transizione del colore al passaggio del mouse */
+}
+
+.icons-social a div:hover {
+  background-color: #60c060; /* Verde più scuro al passaggio del mouse */
+}
+
+.icons-social svg {
+  color: white; /* Colore bianco per le icone */
+  font-size: 20px; /* Dimensione delle icone */
+}
+
+/* Stile per la colonna "Su di noi" */
+.footer-links {
+  list-style-type: none; /* Rimuovi i punti elenco */
+  padding: 0; /* Rimuovi il padding */
+  color: white;
+}
+
+.footer-links li {
+  margin: 25px 0; /* Spaziatura tra i link */
+}
+
+.footer-links li a {
+  color: white;
+}
+
+.title {
+  color: white;
+}
+
+.text-div2{
+  font-size: small;
+  color: white;
+  margin: 0;
+}

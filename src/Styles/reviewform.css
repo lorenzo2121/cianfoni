@@ -1,0 +1,89 @@
+/* Stili per il form di inserimento recensioni con grid */
+
+.review-form {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+}
+
+.review-form h1 {
+  text-align: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+}
+
+.form-grid label {
+  align-self: center;
+}
+
+.form-grid input[type="text"],
+.form-grid textarea,
+.form-grid input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-grid textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.form-grid .rating-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-grid-button[type="submit"] {
+  background-color: #07a028;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form-grid-button[type="submit"]:hover {
+  background-color: #07a028;
+}
+
+/* Stili per la navbar */
+.navbar-review-form{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.navbar-review-form img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Stili per i bottoni nel form di recensione */
+
+.review-form button {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #007bff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.review-form button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+

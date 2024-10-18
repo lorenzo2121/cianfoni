@@ -1,0 +1,22 @@
+/* Stili per il componente Star */
+
+.star-container {
+  display: inline-block;
+}
+
+.star {
+  font-size: 24px;
+  color: #ffc107; /* Colore delle stelle piene */
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.star:hover,
+.star.active {
+  color: #f39c12; /* Colore delle stelle quando sono attive (piene) o al passaggio del mouse */
+}
+
+/* Stili per l'icona di stella vuota */
+.star.empty {
+  color: #ccc; /* Colore delle stelle vuote */
+}

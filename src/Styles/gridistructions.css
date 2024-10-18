@@ -1,0 +1,28 @@
+.outer-container {
+  display: flex; /* Usa flexbox */
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  padding: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Prima colonna più stretta, seconda più larga */
+  gap: 10px; /* Spazio tra gli elementi */
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+
+.svg-container {
+  display: flex; /* Utilizza flexbox solo per i contenitori SVG */
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100%; /* Assicurati che la div occupi tutto lo spazio disponibile */
+}
+
+.item2, .item4, .item6 {
+  border-bottom: 2px solid grey; /* Corretto: non c'è più lo spazio extra tra numero e px */
+}

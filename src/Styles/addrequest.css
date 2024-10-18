@@ -1,0 +1,76 @@
+.add-request-container {
+  background-color: #f1f9f1; /* Verde molto chiaro */
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.add-request-title {
+  color: #28a745; /* Verde principale */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-request-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-request-label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #28a745; /* Verde principale */
+}
+
+.add-request-input,
+.add-request-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #28a745; /* Bordo verde */
+  border-radius: 4px;
+}
+
+.add-request-textarea {
+  resize: none;
+  height: 100px;
+}
+
+.add-request-button {
+  background-color: #28a745; /* Bottone verde */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-request-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.success {
+  color: #28a745; /* Testo di successo verde */
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.error {
+  color: #dc3545; /* Testo di errore rosso */
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
