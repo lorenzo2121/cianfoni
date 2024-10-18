@@ -1,3 +1,4 @@
+/* Stili di base */
 .main-container {
   width: 100%;
   height: 60vh;
@@ -5,7 +6,7 @@
   position: relative; /* Assicurati che il video rimanga all'interno di questo container */
 }
 
-/* Stili per schermi normali */
+/* Stili per lo sfondo video */
 .background-video {
   position: absolute;
   top: 0;
@@ -18,7 +19,7 @@
   z-index: -1; /* Metti il video dietro al contenuto */
 }
 
-/* Stili per la sezione principale */
+/* Sezione principale */
 .main-section {
   padding: 100px;
 }
@@ -87,5 +88,50 @@
 
   .button button {
     width: 100%; /* Rendi il bottone fluido su schermi piccoli */
+  }
+}
+
+/* Stili per schermi molto grandi (proiettori o TV) */
+@media (min-width: 1400px) {
+  .main-container {
+    height: 80vh; /* Aumenta l'altezza del container per grandi schermi */
+  }
+
+  .background-video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .main-section {
+    padding: 150px; /* Aumenta il padding per un layout più spazioso su schermi grandi */
+  }
+
+  .container1 {
+    justify-content: space-around; /* Aumenta lo spazio tra gli elementi */
+    margin-top: 100px;
+  }
+
+  .blu-container {
+    padding: 150px; /* Aumenta il padding per dare più spazio su schermi grandi */
+    height: 400px; /* Aumenta l'altezza del container */
+  }
+
+  .left {
+    width: 600px; /* Aumenta la larghezza del contenuto */
+    height: 300px;
+  }
+
+  .button button {
+    width: 400px; /* Aumenta la dimensione del bottone */
+    height: 60px; /* Aumenta l'altezza del bottone */
+  }
+
+  .title {
+    font-size: 3rem; /* Aumenta la dimensione del titolo */
+  }
+
+  .description {
+    font-size: 1.5rem; /* Aumenta la dimensione del testo della descrizione */
   }
 }
