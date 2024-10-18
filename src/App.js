@@ -10,7 +10,6 @@ import card3 from './Assets/contact.jpg';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './Components/Authcontext'; // Importa il provider del contesto di autenticazione
 import Professionalsignup from './Components/Professionalsignup';
-import Main from './Components/Main';
 import Trendservice from './Components/TrendService';
 import Searchbar from './Components/Searchbar';
 import Searchresults from './Components/Searchresults';
@@ -22,8 +21,6 @@ import PrivateRoute from './Components/Privateroute';
 import AddRequest from './Components/Addrequest';
 import Buysubscription from './Components/Buysubscription';
 import Gridistructions from './Components/GridIstructions';
-import { Lottie } from 'lottie-react'; // Importa il componente Lottie
-import Animation from './Components/Animation'
 import videoBg from './Assets/search.mp4'
 import Footer from './Components/Footer'
 
