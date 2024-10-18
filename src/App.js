@@ -48,7 +48,7 @@ function HomePage(){
         <Title text={"Trova il tuo professionista"} />
         </section>
         <Searchbar />
-        <Title2 text={"Come funziona profinder"} />
+        <Title2 text={"Come funziona the work"} />
         <div className='main-section'>
           <div className='container1'>
             <Card 
