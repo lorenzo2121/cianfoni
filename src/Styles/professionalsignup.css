@@ -21,6 +21,7 @@
     display: block; /* Visualizza ogni etichetta come blocco separato */
     margin-bottom: 10px; /* Spaziatura sotto ogni etichetta */
     text-align: left; /* Allinea il testo a sinistra */
+    font-weight: bold; /* Rende il testo in grassetto */
 }
 
 .form-container form input,
@@ -108,3 +109,78 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .bg-container {
+      height: auto; /* Adjust height for smaller screens */
+      padding: 20px; /* Reduce padding */
+      flex-direction: column; /* Stack content vertically */
+    }
+  
+    .form-container {
+      width: 100%; /* Full width on smaller screens */
+      padding: 20px; /* Reduce padding */
+      margin: 0 auto;
+    }
+  
+    .form-container form label {
+      font-size: 14px; /* Smaller font for better readability on mobile */
+    }
+  
+    .form-container form input,
+    .form-container form textarea {
+      padding: 10px; /* Larger input padding for touch devices */
+      font-size: 14px; /* Adjust input text size */
+    }
+  
+    .form-container form .button-container {
+      flex-direction: column; /* Stack buttons vertically */
+    }
+  
+    .form-container form button {
+      width: 100%; /* Full width buttons for touch devices */
+      margin-bottom: 10px; /* Add spacing between buttons */
+    }
+  
+    .preview-gallery img {
+      width: 80px; /* Smaller image previews on mobile */
+      height: 80px;
+    }
+  
+    .card-container-1 {
+      padding: 20px; /* Less padding on smaller devices */
+      flex-direction: column; /* Stack cards vertically */
+    }
+  
+    .card-container-2 {
+      flex-direction: column; /* Cards are vertically stacked */
+    }
+  
+    .loading-spinner {
+      width: 40px; /* Smaller spinner on mobile */
+      height: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-container {
+      padding: 15px; /* Further reduce padding for very small screens */
+    }
+  
+    .form-container form input,
+    .form-container form textarea {
+      font-size: 12px; /* Smaller text for very small screens */
+      padding: 8px;
+    }
+  
+    .form-container form label {
+      font-size: 12px;
+    }
+  
+    .loading-spinner {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
