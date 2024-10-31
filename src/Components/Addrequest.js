@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { db, storage } from '../firebase';
 import { collection, query, where, getDocs, updateDoc, arrayUnion } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
@@ -21,11 +21,11 @@ const AddRequest = () => {
   const [message, setMessage] = useState('');
 
   const handleImageChange = (event) => {
-    var files = Array.from(event.target.files);
+    const files = Array.from(event.target.files);
     if (files.length + imageFiles.length > 3) {
       alert("Puoi caricare al massimo 3 immagini.");
-      event.target.value = "";
-      setImageFiles([]);
+      event.target.value = ""; // Resetta il valore dell'input
+      setImageFiles([])
     } else {
       setImageFiles((prevFiles) => [...prevFiles, ...files]);
     }
@@ -51,7 +51,7 @@ const AddRequest = () => {
     try {
       // Carica le immagini su Firebase Storage
       for (const imageFile of imageFiles) {
-        const storageRef = ref(storage, `images/${imageFile.name}`);
+        const storageRef = ref(storage, `images/${imageFile.name}`); // Corretto l'uso delle stringhe template
         await uploadBytes(storageRef, imageFile);
         const url = await getDownloadURL(storageRef);
         requestJson.imageUrls.push(url); // Aggiungi ogni URL a requestJson
@@ -79,7 +79,7 @@ const AddRequest = () => {
         setMessage('Richiesta aggiunta con successo!');
       }
     } catch (e) {
-      setError('Errore durante l\'aggiunta della richiesta');
+      setError('Errore durante l\'aggiunta della richiesta. Riprova più tardi.');
       console.error('Errore durante l\'aggiunta della richiesta:', e);
     } finally {
       setLoading(false);
@@ -160,7 +160,7 @@ const AddRequest = () => {
                 <img
                   key={index}
                   src={URL.createObjectURL(file)}
-                  alt={`Preview ${index + 1}`}
+                  alt={`Anteprima ${index + 1}`} // Corretto l'attributo alt
                   className="preview-image"
                 />
               ))}

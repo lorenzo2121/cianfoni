@@ -139,7 +139,7 @@ const handleContact = async (requestIndex) => {
 
 
   return (
-    <div>
+    <>
     <nav className="navbar-private">
       <h1 className='profile-private-title'>Profile</h1>
       <div className="requests">
@@ -183,11 +183,13 @@ const handleContact = async (requestIndex) => {
           ))}
         </div>
       ) : (
+        <div className='profile-private-norequest'>
         <p>Nessuna richiesta disponibile.</p>
+        </div>
       )}
     </div>
     <Footer />
-  </div>
+    </>
   );
 };
 

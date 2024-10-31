@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/f
 
 function Footer() {
   return (
-    <>
+    <div className='footer-main-container'>
       <div className='footer-container'>
         <div className='footer-column'>
           <img className='logo-footer-column' src={img2} alt="Logo" />
@@ -55,7 +55,7 @@ function Footer() {
         <p className='text-div2'>© Copyright 2020-2024 | The Work | All Rights Reserved | The Work S.r.l. SB - P.IVA: 02613410204 | 
            N° REA: MN-266523 | Capitale versato: 13.747,21 € | Relazione d'impatto benefit 2023</p>
       </div>
-    </>
+      </div>
   );
 }
 
