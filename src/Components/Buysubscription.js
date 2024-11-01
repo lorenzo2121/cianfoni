@@ -14,7 +14,7 @@ const Buysubscription = () => {
   const handlePurchase = async (priceId) => {
     try {
       const userEmail = getUserEmail();
-      const response = await fetch('http://16.16.182.37:4242/create-checkout-session', {
+      const response = await fetch('https://16.16.182.37:4242/create-checkout-session', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
