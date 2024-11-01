@@ -1,77 +1,48 @@
+.container-buy-subscription {
+  text-align: center;
+  padding: 20px;
+}
 
-  
-  .container-sub-buy-subscription {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  .buy-subscription-h1 {
-    text-align: center;
-    color: #0056b3;
-  }
-  
-  .buy-subscription-buttons {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .buy-subscription-button {
-    background-color: #0056b3;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .buy-subscription-button.active {
-    background-color: #003d7a;
-  }
-  
-  .buy-subscription.button:hover {
-    background-color: #004b8a;
-  }
-  
-  .buy-subscription-subscriptions {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .buy-subscription-subscription {
-    background-color: #f0f8ff;
-    border: 1px solid #0056b3;
-    border-radius: 8px;
-    padding: 20px;
-    width: 30%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .buy-subscription-subscription-h2 {
-    color: #0056b3;
-    text-align: center;
-  }
-  
-  .buy-subscription-subscription-p {
-    font-size: 24px;
-    text-align: center;
-    color: #333;
-  }
-  
-  .buy-subscription-ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .buy-subscription-li {
-    background-color: #e0e8ff;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 4px;
-  }
-  
+.buy-subscription-h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.buy-subscription-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.buy-subscription-card {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.buy-subscription-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.buy-subscription-card p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.buy-subscription-card button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buy-subscription-card button:hover {
+  background-color: #0056b3;
+}

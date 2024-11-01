@@ -38,6 +38,10 @@ const Navbar = () => {
         navigate("/profile");
     };
 
+    const handleSubscription = () => {
+        navigate("/buy-subscription");
+    };
+
     const handleLogout = () => {
         logout();
     };
@@ -82,8 +86,9 @@ const Navbar = () => {
                     {isLoggedIn ? (
                         <>
                             <li><a href="" onClick={handleProfile}>Profile</a></li>
-                            <li><a href="#" onClick={handleLogout}>Logout</a></li>
-                            <li><a href="#" onClick={handleChangePassword}>Change Password</a></li>
+                            <li><a href="" onClick={handleLogout}>Logout</a></li>
+                            <li><a href="" onClick={handleChangePassword}>Change Password</a></li>
+                            <li><a href="" onClick={handleSubscription}>Buy Requests</a></li>
                         </>
                     ) : (
                         <li><a href="#" onClick={handleLoginClick}>Accedi</a></li>
