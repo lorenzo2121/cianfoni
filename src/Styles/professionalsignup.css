@@ -1,0 +1,186 @@
+/* src/Styles/professionalsignup.css */
+.bg-container {
+    height: 60vh; /* Altezza completa della viewport */
+    background-image: url('../Assets/118718763_l_normal_none.jpg');
+    background-size: cover; /* Adatta l'immagine mantenendo le proporzioni */
+    background-position: center; /* Centra l'immagine */
+    background-repeat: no-repeat; /* Non ripete l'immagine */
+    display: flex; /* Usa Flexbox per centrare il contenuto */
+    padding: 50px;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Colore di sfondo semi-trasparente per visibilità */
+    padding: 30px; /* Spaziatura interna */
+    border-radius: 10px; /* Angoli arrotondati */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombra per un leggero effetto 3D */
+    height: fit-content;
+}
+
+.form-container form label {
+    display: block; /* Visualizza ogni etichetta come blocco separato */
+    margin-bottom: 10px; /* Spaziatura sotto ogni etichetta */
+    text-align: left; /* Allinea il testo a sinistra */
+    font-weight: bold; /* Rende il testo in grassetto */
+}
+
+.form-container form input,
+.form-container form textarea {
+    width: 100%; /* Larghezza completa del contenitore */
+    padding: 8px; /* Spaziatura interna */
+    margin-top: 5px; /* Spaziatura sopra gli input */
+    border: 1px solid #ccc; /* Bordo grigio chiaro */
+    border-radius: 5px; /* Angoli leggermente arrotondati */
+}
+
+.form-container form .service-input {
+    display: flex; /* Flexbox per allineare input e pulsante */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 10px; /* Spaziatura sotto il campo di servizio */
+}
+
+.form-container form .service-input input {
+    flex: 1; /* Occupa tutto lo spazio disponibile */
+    margin-right: 10px; /* Spaziatura a destra per il pulsante */
+}
+
+.form-container form ul {
+    list-style-type: none; /* Rimuove i punti elenco */
+    padding: 0; /* Rimuove il padding */
+    margin: 10px 0; /* Spaziatura sopra e sotto la lista */
+}
+
+.form-container form li {
+    background-color: #f8f9fa; /* Colore di sfondo chiaro per le voci di lista */
+    padding: 8px; /* Spaziatura interna */
+    border: 1px solid #ddd; /* Bordo grigio chiaro */
+    border-radius: 5px; /* Angoli arrotondati */
+    margin-bottom: 5px; /* Spaziatura tra le voci di lista */
+}
+
+.form-container form .button-container {
+    display: flex; /* Usa Flexbox per i bottoni */
+    justify-content: space-between; /* Spaziatura tra i bottoni */
+    margin-top: 20px; /* Spaziatura sopra i bottoni */
+}
+
+.form-container form button {
+    padding: 10px 20px; /* Spaziatura interna */
+    border: none; /* Rimuove il bordo */
+    background-color: #007BFF; /* Colore di sfondo blu */
+    color: white; /* Colore del testo bianco */
+    border-radius: 5px; /* Angoli arrotondati */
+    cursor: pointer; /* Cambia il cursore al passaggio */
+}
+
+.form-container form button[type="button"] {
+    background-color: #6c757d; /* Colore di sfondo grigio per i bottoni "Prev" */
+}
+
+.signup-howto {
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    padding: 20px; /* Aggiunta di spaziatura per migliorare l'aspetto */
+}
+
+.loading-spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto; /* Centra il caricatore */
+}
+
+.card-container-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.card-container-2{
+    display: flex;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .bg-container {
+      height: auto; /* Adjust height for smaller screens */
+      padding: 20px; /* Reduce padding */
+      flex-direction: column; /* Stack content vertically */
+    }
+  
+    .form-container {
+      width: 100%; /* Full width on smaller screens */
+      padding: 20px; /* Reduce padding */
+      margin: 0 auto;
+    }
+  
+    .form-container form label {
+      font-size: 14px; /* Smaller font for better readability on mobile */
+    }
+  
+    .form-container form input,
+    .form-container form textarea {
+      padding: 10px; /* Larger input padding for touch devices */
+      font-size: 14px; /* Adjust input text size */
+    }
+  
+    .form-container form .button-container {
+      flex-direction: column; /* Stack buttons vertically */
+    }
+  
+    .form-container form button {
+      width: 100%; /* Full width buttons for touch devices */
+      margin-bottom: 10px; /* Add spacing between buttons */
+    }
+  
+    .preview-gallery img {
+      width: 80px; /* Smaller image previews on mobile */
+      height: 80px;
+    }
+  
+    .card-container-1 {
+      padding: 20px; /* Less padding on smaller devices */
+      flex-direction: column; /* Stack cards vertically */
+    }
+  
+    .card-container-2 {
+      flex-direction: column; /* Cards are vertically stacked */
+    }
+  
+    .loading-spinner {
+      width: 40px; /* Smaller spinner on mobile */
+      height: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-container {
+      padding: 15px; /* Further reduce padding for very small screens */
+    }
+  
+    .form-container form input,
+    .form-container form textarea {
+      font-size: 12px; /* Smaller text for very small screens */
+      padding: 8px;
+    }
+  
+    .form-container form label {
+      font-size: 12px;
+    }
+  
+    .loading-spinner {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  

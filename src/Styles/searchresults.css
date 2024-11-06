@@ -1,0 +1,90 @@
+.search-results {
+  margin-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.zone-filter {
+  margin-bottom: 20px; /* Spazio sotto il filtro */
+  padding: 10px; /* Spazio interno */
+  border: 1px solid #ccc; /* Bordo grigio chiaro */
+  border-radius: 5px; /* Angoli arrotondati */
+  background-color: #f8f8f8; /* Sfondo leggermente grigio */
+  display: flex; /* Usato per allineare l'etichetta e l'input */
+  align-items: center; /* Centra verticalmente */
+}
+
+.zone-filter label {
+  font-size: 16px; /* Dimensione del testo */
+  margin-right: 10px; /* Spazio a destra dell'etichetta */
+  color: #333; /* Colore del testo */
+}
+
+.zone-filter input {
+  flex: 1; /* Permette all'input di occupare tutto lo spazio disponibile */
+  padding: 10px; /* Spazio interno */
+  font-size: 16px; /* Dimensione del testo */
+  border: 1px solid #28a745; /* Bordo verde */
+  border-radius: 4px; /* Angoli arrotondati */
+  transition: border-color 0.3s; /* Effetto di transizione per il bordo */
+}
+
+.zone-filter input:focus {
+  border-color: #218838; /* Colore del bordo quando l'input è attivo */
+  outline: none; /* Rimuove il contorno predefinito */
+}
+
+.search-results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search-results li {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-results li h3 {
+  margin: 0 0 10px;
+}
+
+.search-results li p {
+  margin: 5px 0;
+}
+
+.img-profile {
+  width: 50px; /* Riduce la dimensione dell'immagine */
+  height: 50px; /* Assicura che l'immagine sia quadrata */
+  border-radius: 50%; /* Rende l'immagine rotonda */
+  object-fit: cover; /* Assicura che l'immagine riempia il contenitore senza distorsioni */
+  margin-right: 15px; /* Aggiunge spazio tra l'immagine e il testo */
+}
+
+.image {
+  width: 100px; /* Dimensioni desiderate per l'immagine */
+  height: 100px; /* Deve essere uguale a width per ottenere un cerchio perfetto */
+  object-fit: fill; /* Mantiene le proporzioni dell'immagine */
+}
+
+.result-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px; /* Aggiungi spazio tra input e bottone */
+  background-color: #28a745; /* Colore di sfondo verde */
+  color: white; /* Colore del testo del bottone */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.result-button:hover {
+  background-color: #218838; /* Verde più scuro quando il mouse è sopra */
+}
+
+.text-green {
+  color: #28a745; /* Verde principale */
+}

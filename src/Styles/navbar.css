@@ -1,0 +1,131 @@
+/* navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Assicurati che la navbar rimanga sopra gli altri elementi */
+}
+
+.menu-icon {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 1.5rem; /* Aumenta la dimensione dell'icona */
+}
+
+.logo {
+    margin-left: 125px; /* Ridotto margine per una migliore responsività */
+    width: 100px;
+    height: 50px;
+}
+
+.btn {
+    background-color: #13b33b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #43e702; /* Colore più scuro al passaggio del mouse */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    z-index: 999; /* Assicurati che la sidebar sia sopra il contenuto */
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block; /* Rendi i link a tutto il lato */
+}
+
+.sidebar ul li a:hover {
+    background-color: #444; /* Colore di sfondo al passaggio del mouse */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998; /* Z-index inferiore rispetto alla sidebar */
+}
+
+.loading-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Stili per il modulo di cambio password */
+.change-password-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001; /* Assicurati che sia in primo piano */
+    width: 90%; /* Adatta la larghezza su schermi più piccoli */
+    max-width: 400px; /* Larghezza massima per schermi più grandi */
+}
+
+.change-password-form-container input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.change-password-form-container button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+}
+
+.change-password-form-container button:hover {
+    background-color: #357ab8; /* Colore più scuro al passaggio del mouse */
+}

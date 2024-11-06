@@ -1,0 +1,126 @@
+/* addrequest.css */
+
+/* Generale */
+.add-request-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-request-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-request-label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.add-request-input,
+.add-request-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.add-request-input:focus,
+.add-request-textarea:focus {
+  border-color: #00BFFF;
+}
+
+.add-request-textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* File input */
+.add-request-file {
+  margin-top: 10px;
+}
+
+.image-preview {
+  display: flex;
+  gap: 10px;
+}
+
+.preview-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Pulsante */
+.add-request-button {
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color: #007423;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-request-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.add-request-button:hover:not(:disabled) {
+  background-color: #3ccf02;
+}
+
+/* Spinner di caricamento */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* Messaggi di successo ed errore */
+.success,
+.error {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+

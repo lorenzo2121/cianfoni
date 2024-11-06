@@ -1,0 +1,94 @@
+/* Stili di base */
+.main-container {
+  width: 100%;
+  height: 60vh;
+  text-align: center;
+  position: relative; /* Assicurati che il video rimanga all'interno di questo container */
+}
+
+/* Stili per lo sfondo video */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: -1; /* Metti il video dietro al contenuto */
+}
+
+/* Sezione principale */
+.main-section {
+  padding: 100px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.blu-container {
+  background-color: rgb(2, 71, 17);
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+.left {
+  width: 377px;
+  height: 190px;
+}
+
+.button {
+  margin-top: 50px;
+}
+
+.button button {
+  border-radius: 10px;
+  background-color: rgb(107, 255, 62);
+  height: 40px;
+  width: 300px;
+  border: 1px rgb(7, 121, 32);
+}
+
+.title {
+  color: rgb(107, 255, 62);
+}
+
+.description {
+  color: #ffffff;
+}
+
+/* Stili per schermi piccoli */
+@media (max-width: 768px) {
+  .background-video {
+    display: none; /* Nascondi il video su schermi piccoli */
+  }
+
+  .main-container {
+    background-color: rgb(2, 71, 17); /* Aggiungi colore di sfondo */
+  }
+
+  .main-section {
+    padding: 50px; /* Riduci il padding per schermi più piccoli */
+  }
+
+  .container1 {
+    flex-direction: column; /* Impila le card verticalmente */
+    margin-top: 20px;
+  }
+
+  .blu-container {
+    padding: 50px; /* Riduci il padding per rendere il layout più compatto */
+  }
+
+  .button button {
+    width: 100%; /* Rendi il bottone fluido su schermi piccoli */
+  }
+}
+
+/* Stili per schermi molto grandi (proiettori o TV) */

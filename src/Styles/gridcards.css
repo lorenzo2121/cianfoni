@@ -1,0 +1,36 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 300px di larghezza minima, con espansione automatica */
+    gap: 20px; /* Spazio tra le card */
+    justify-items: center; /* Centra le card orizzontalmente */
+  }
+  
+  /* Stile per ciascuna card, se necessario */
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Effetto ombra */
+    overflow: hidden; /* Nasconde l'overflow dell'immagine */
+    width: 100%; /* Larghezza della card al 100% del contenitore */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #666666;
+  }
+  

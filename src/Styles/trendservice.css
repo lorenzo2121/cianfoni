@@ -1,0 +1,27 @@
+.trend-service-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.trend-service-title{
+  color: #13b33b;
+}
+
+.trend-service-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonne */
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .trend-service-grid-container {
+      grid-template-columns: repeat(1, 1fr); /* 2 colonne su schermi più piccoli */
+  }
+}
+
+@media (max-width: 480px) {
+  .trend-service-grid-container {
+      grid-template-columns: 1fr; /* 1 colonna su schermi molto piccoli */
+      
+  }
+}
